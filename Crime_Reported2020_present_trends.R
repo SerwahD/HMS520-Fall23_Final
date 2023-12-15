@@ -19,7 +19,7 @@ crime_data <- crime_data %>%
 crime_data <- crime_data %>%
   arrange(date_reported)
 
-#Total crime per area name and sex
+#Total crime per area name
 crime_data <- crime_data %>%
   group_by(area_name) %>%
   mutate(crime_count = n()) %>%
